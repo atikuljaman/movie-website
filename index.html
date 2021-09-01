@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movflx</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--  css stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="my-header">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light my-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li onclick="loadData()" class="nav-item">
+                            <a class="nav-link text-white fw-bold active my-a" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li onclick="drama()" class="nav-item">
+                            <a class="nav-link text-white fw-bold my-a" href="#">Dramas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold disabled my-a" href="#" tabindex="-1"
+                                aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2 my-input" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="my-5 container main">
+            <div class="d-flex justify-content-between">
+                <h2 class="my-4 text-uppercase">Popular Movies</h2>
+                <div>
+                    <button class="btns" onclick="loadTopMovie()">Top Rated</button>
+                    <button class="btns" onclick="loadBestMovie()">Best Movie</button>
+                    <button class="btns" onclick="">Old Movie</button>
+                </div>
+            </div>
+            <div class="container my-5" id="popular">
+            </div>
+        </div>
+
+        <!-- top rated movie -->
+        <div class="my-5 container main">
+            <div class="d-flex justify-content-between d-none com-div" id="com-div">
+                <h2 class="my-4 text-uppercase">top rated Movies</h2>
+                <div>
+                    <button class="btns" onclick="loadTopMovie()">Top Rated</button>
+                    <button class="btns" onclick="loadBestMovie()">Best Movie</button>
+                    <button class="btns" onclick="">Old Movie</button>
+                </div>
+            </div>
+            <div class="my-5 container" id="popular-1">
+
+            </div>
+        </div>
+
+        <!-- best movies -->
+        <div class="my-5 container main">
+            <div class="d-flex justify-content-between d-none com-div" id="com-div">
+                <h2 class="my-4 text-uppercase">hello</h2>
+                <div>
+                    <button class="btns" onclick="loadTopMovie()">Top Rated</button>
+                    <button class="btns" onclick="loadBestMovie()">Best Movie</button>
+                    <button class="btns" onclick="">Old Movie</button>
+                </div>
+            </div>
+            <div class="my-5 container" id="best-movie">
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- my script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
